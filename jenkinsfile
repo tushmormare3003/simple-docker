@@ -1,14 +1,14 @@
 pipeline {
  environment {
  imagename = “tushmormare3003/jenkins-docker”
- registryCredential = ‘tushmormare007-docckerhub’
+ registryCredential = ‘tushmormare3003-docckerhub’
  dockerImage = ‘’
  }
  agent any
  stages {
  stage(‘Cloning Git’) {
  steps {
- git([url: ‘https://github.com/adithyak21/simple-docker.git', branch: ‘main’])
+ git([url: ‘https://github.com/tushmormare3003/simple-docker.git', branch: ‘main’])
  }
  }
  stage(‘Building image’) {
